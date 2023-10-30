@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kpuwar <kpuwar@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 04:42:19 by kpuwar            #+#    #+#             */
-/*   Updated: 2023/10/30 17:48:11 by kpuwar           ###   ########.fr       */
+/*   Created: 2023/10/30 18:34:34 by kpuwar            #+#    #+#             */
+/*   Updated: 2023/10/30 18:34:54 by kpuwar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#ifndef WRONGCAT_HPP
+#define WRONGCAT_HPP
 
-Cat::Cat(void) : Animal("Cat") {
-	cout << "Cat Constructor is called" << endl;
-}
+#include "WrongAnimal.hpp"
 
-Cat::~Cat(void) {
-	cout << "Cat Destructor is called" << endl;
-}
+class WrongCat : public WrongAnimal {
+	public:
+		WrongCat();
+		~WrongCat();
 
-void Cat::makeSound(void) const {
-	cout << "Meow" << endl;
-}
+		void makeSound(void) const;
+};
+
+#endif

@@ -6,7 +6,7 @@
 #    By: kpuwar <kpuwar@student.42heilbronn.de>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/30 04:42:31 by kpuwar            #+#    #+#              #
-#    Updated: 2023/10/30 04:44:49 by kpuwar           ###   ########.fr        #
+#    Updated: 2023/10/30 18:31:27 by kpuwar           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,8 +15,8 @@ NAME = Polymorphism
 CC = c++
 CFLAGS = -Wextra -Wall -Werror -std=c++98
 
-INCLUDES = Animal.hpp Dog.hpp Cat.hpp
-SRCS = main.cpp Animal.cpp Dog.cpp Cat.cpp
+INCLUDES = Animal.hpp Dog.hpp Cat.hpp WrongAnimal.hpp WrongCat.hpp
+SRCS = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
 OBJS = ${SRCS:.cpp=.o}
 
 RM = rm -rf

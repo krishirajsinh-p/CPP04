@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   WrongWrongAnimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kpuwar <kpuwar@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 04:39:26 by kpuwar            #+#    #+#             */
-/*   Updated: 2023/10/30 17:48:11 by kpuwar           ###   ########.fr       */
+/*   Updated: 2023/10/30 18:32:55 by kpuwar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
-Animal::Animal(void) {
-	this->type = "Animal";
-	cout << "Animal Constructor called" << endl;
+WrongAnimal::WrongAnimal(void) {
+	this->type = "WrongAnimal";
+	cout << "WrongAnimal Constructor called" << endl;
 }
 
-Animal::Animal(string type) {
+WrongAnimal::WrongAnimal(string type) {
 	this->type = type;
-	cout << "Animal Constructor called for " << this->type << endl;
+	cout << "WrongAnimal Constructor called for " << this->type << endl;
 }
 
-Animal::~Animal() {
-	cout << "Animal Destructor called for " << this->type << endl;
+WrongAnimal::~WrongAnimal() {
+	cout << "WrongAnimal Destructor called for " << this->type << endl;
 }
 
-const string& Animal::getType(void) const {
+const string& WrongAnimal::getType(void) const {
 	return this->type;
 }
 
-void Animal::makeSound(void) const {
-	cout << "Animal making some sound" << endl;
+void WrongAnimal::makeSound(void) const {
+	cout << "WrongAnimal making some sound" << endl;
 }
